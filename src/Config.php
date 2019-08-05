@@ -1,6 +1,6 @@
 <?php
 
-namespace Gswits\PdfToHtml;
+namespace Kuchura\PdfToHtml;
 
 use Illuminate\Config\Repository;
 
