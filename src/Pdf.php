@@ -33,19 +33,19 @@ class Pdf
         $process = new Process(array($this->bin(), $this->file));
 
         $process->run();
-        
-        if (! $process->isSuccessful()) {
+
+        if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
         }
 
-        $content =  $process->getOutput();
-            
+        $content = $process->getOutput();
+
         $options = explode("\n", $content);
         $info = [];
         foreach ($options as &$item) {
             if (!empty($item)) {
                 list($key, $value) = explode(":", $item);
-                $info[ str_replace([" "], ["_"], strtolower($key)) ] = trim($value);
+                $info[str_replace([" "], ["_"], strtolower($key))] = trim($value);
             }
         }
         $this->info = $info;

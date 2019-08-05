@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93447d13-e2d5-4269-a0e7-fb4473868965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Html.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Html.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/HtmlParseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/HtmlParseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/PdfBaseTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PdfBaseTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/PdfInfoTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PdfInfoTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/PdfToHtmlTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PdfToHtmlTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +53,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565005771743</updated>
-      <workItem from="1565005773342" duration="52000" />
+      <workItem from="1565005773342" duration="205000" />
     </task>
+    <task id="LOCAL-00001" summary="changes">
+      <created>1565005890853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565005890853</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changes">
+      <created>1565005922299</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565005922299</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
 </project>
