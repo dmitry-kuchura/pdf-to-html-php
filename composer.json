@@ -2,10 +2,10 @@
   "name": "dmitry-kuchura/pdf-to-html-php",
   "description": "PDF to HTML converter with PHP using Poppler-utils",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "authors": [
     {
-      "name": "Dmytro Kuchura",
+      "name": "Dmitry Kuchura",
       "email": "kuchurad.d@gmail.com"
     }
   ],

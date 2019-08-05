@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af6be1af-d1cc-4c5b-99c8-091ee6af936a" name="Default Changelist" comment="" />
+    <list default="true" id="93447d13-e2d5-4269-a0e7-fb4473868965" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +19,12 @@
       <executable />
     </execution>
   </component>
-  <component name="ProjectId" id="1P0GtWTKb9Om13Adzs5hDo7vg4A" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1P0KrN1pyS6BwAOjDSRZmhkUvB3" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -36,16 +45,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="af6be1af-d1cc-4c5b-99c8-091ee6af936a" name="Default Changelist" comment="" />
-      <created>1565003814395</created>
+      <changelist id="93447d13-e2d5-4269-a0e7-fb4473868965" name="Default Changelist" comment="" />
+      <created>1565005771743</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1565003814395</updated>
-      <workItem from="1565003815769" duration="182000" />
+      <updated>1565005771743</updated>
+      <workItem from="1565005773342" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
