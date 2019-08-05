@@ -14,7 +14,7 @@ Or add this package to your `composer.json`
 
 ```json
 {
-  "dmitry-kuchura/pdf-to-html-php": "^2.0.1"
+  "dmitry-kuchura/pdf-to-html-php": "^2.0.*"
 }
 ```
 
