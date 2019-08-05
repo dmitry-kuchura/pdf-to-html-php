@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/mgufrone/pdf-to-html.svg?branch=master)](https://travis-ci.org/mgufrone/pdf-to-html)
-[![Coverage Status](https://coveralls.io/repos/github/mgufrone/pdf-to-html/badge.svg?branch=master)](https://coveralls.io/github/mgufrone/pdf-to-html?branch=master)
+[![Build Status](https://api.travis-ci.com/dmitry-kuchura/pdf-to-html-php.svg?branch=master)](https://travis-ci.org/mgufrone/pdf-to-html)
 
 # PDF to HTML PHP Class
 
@@ -15,7 +14,7 @@ Or add this package to your `composer.json`
 
 ```json
 {
-  "dmitry-kuchura/pdf-to-html-php": "^1.0.0"
+  "dmitry-kuchura/pdf-to-html-php": "^2.0.1"
 }
 ```
 
@@ -39,34 +38,26 @@ Having setup your poll-utils package and provided the location to the library, y
 
 > WARNING! If you're not working in an environment that automatically loads the vendor list from composer, you will need to manually do so yourself by adding `include /vendor/autoload.php` at the top of your file. If you're in Laravel, you do not need this.
 
-### An example use case follows:
+### Usage:
 
 ```php
-<?php
-// if you are using composer, just use this
-include 'vendor/autoload.php';
+namespace App\Http\Controllers;
 
-// initiate
-$pdf = new Kuchura\PdfToHtml\Pdf('file.pdf');
+use Kuchura\PdfToHtml\Config;
+use Kuchura\PdfToHtml\Pdf;
 
-// convert to html string
-$html = $pdf->html();
+class PdfController
+{
+    public function pdf()
+    {
+        Config::set('pdftohtml.bin', '/usr/bin/pdftohtml');
+        Config::set('pdfinfo.bin', '/usr/bin/pdfinfo');
 
-// convert a specific page to html string
-$page = $pdf->html(3);
+        $pdf = new Pdf(public_path() . '/test.pdf');
 
-// convert to html and return it as [Dom Object](https://github.com/thesoftwarefanatics/php-html-parser)
-$dom = $pdf->getDom();
-
-// check if your pdf has more than one pages
-$total_pages = $pdf->getPages();
-
-// Your pdf happen to have more than one pages and you want to go another page? Got it. use this command to change the current page to page 3
-$dom->goToPage(3);
-
-// and then you can do as you please with that dom, you can find any element you want
-$paragraphs = $dom->find('body > p');
-?>
+        $html = $pdf->html();
+    }
+}
 ```
 
 ### Passing options to getDOM
@@ -74,7 +65,6 @@ $paragraphs = $dom->find('body > p');
 By default `getDom()` will extract all of the images contained in the pdf. If you do not wish to maintain the images, you can specify this property prior to calling `\$pdf->html() to generate your HTML document.
 
 ```php
-<?php
 $pdfDom = $pdf->getDom(['ignoreImages' => true]);
 ```
 
@@ -87,40 +77,6 @@ Additionally, you may pass several arguments to the `Pdf` constructor. These arg
 - ignoreImages, default: false
 - zoom, default: 1.5
 - noFrames, default: true
-
-## Usage note for Windows Users
-
-For those who need this package in windows, there is a way. First download poppler-utils for windows here <http://blog.alivate.com.au/poppler-windows/>. And download the latest binary.
-
-After download it, extract it. There will be a directory called `bin`. We will need this one. Then change your code like this
-
-```php
-<?php
-// if you are using composer, just use this
-include 'vendor/autoload.php';
-use Kuchura\PdfToHtml\Config;
-// change pdftohtml bin location
-Config::set('pdftohtml.bin', 'C:/poppler-0.37/bin/pdftohtml.exe');
-
-// change pdfinfo bin location
-Config::set('pdfinfo.bin', 'C:/poppler-0.37/bin/pdfinfo.exe');
-// initiate
-$pdf = new Gswits\PdfToHtml\Pdf('file.pdf');
-
-// convert to html and return it as [Dom Object](hhttps://github.com/thesoftwarefanatics/php-html-parser)
-$html = $pdf->html();
-
-// check if your pdf has more than one pages
-$total_pages = $pdf->getPages();
-
-// Your pdf happen to have more than one pages and you want to go another page? Got it. use this command to change the current page to page 3
-$html->goToPage(3);
-
-// and then you can do as you please with that dom, you can find any element you want
-$paragraphs = $html->find('body > p');
-
-?>
-```
 
 ## Usage note for OS/X Users
 
@@ -144,27 +100,6 @@ $ which pdfinfo
 
 $ which pdftohtml
 /usr/local/bin/pdfinfo
-```
-
-**4. Whatever the paths are, use `Gswits\PdfToHtml\Config::set` to set them in your php code**. Obviously, use the same path as the one given by the `which` command;
-
-```php
-<?php
-// if you are using composer, just use this
-include 'vendor/autoload.php';
-
-// change pdftohtml bin location
-\Kuchura\PdfToHtml\Config::set('pdftohtml.bin', '/usr/local/bin/pdftohtml');
-
-// change pdfinfo bin location
-\Kuchura\PdfToHtml\Config::set('pdfinfo.bin', '/usr/local/bin/pdfinfo');
-
-// initiate
-$pdf = new Kuchura\PdfToHtml\Pdf('file.pdf');
-
-// convert to html and return it as [Dom Object](https://github.com/thesoftwarefanatics/php-html-parser)
-$html = $pdf->html();
-?>
 ```
 
 ## Feedback & Contribute
