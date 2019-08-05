@@ -5,8 +5,6 @@ addons:
     packages:
     - poppler-utils
 php:
-  - 7.0
-  - 7.1
   - 7.2
 before_script:
  - composer install

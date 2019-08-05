@@ -2,7 +2,7 @@
 
 # PDF to HTML PHP Class
 
-A simple class for converting PDF files into HTML documents. This package was forked from the [original maintainer](https://github.com/mgufrone/pdf-to-html). As it has since been abandoned, I've decided to migrate the package and port it so that it can be used in php 7.1+ environments.
+A simple class for converting PDF files into HTML documents. This package was forked from the [original maintainer](https://github.com/mgufrone/pdf-to-html). As it has since been abandoned, I've decided to migrate the package and port it so that it can be used in php 7.2+ environments.
 
 ## Installation
 
